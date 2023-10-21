@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Victor+Mono&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Victor Mono', monospace; */
+    padding: 0;
+    margin: 0;
+}
+.Movie{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: chartreuse;
+}
+#searchText{
+    appearance: none;
+        border: none;
+        outline: none;
+        border-bottom: .2em solid #304411;
+        background: rgba(#304411, .2);
+        border-radius: .2em .2em 0 0;
+        padding: .4em;
+        color: #304411;
+        width: 300px;
+}
+#searchSubmit{
+    appearance: none;
+        border: .2em solid #304411;
+        background: hsl(0 0 0/0);
+        padding: .4em 1.5em;
+        color: #304411;
+        border-radius: 28px;
+        transition: 1s;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            background: #304411;
+            color: #fff;
+        }
+}
